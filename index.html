@@ -14,18 +14,51 @@
             <div class='nav-burger-and-logo'>
          <div class='nav-burger'>
             <span class='nav-burger-item'></span>
+            <div class='burger-menu no-active-menu'>
+               <ul>
+                  <li><a href='#'></a></li>
+                  <li><a href='#'></a></li>
+                  <li><a href='#'></a></li>
+                  <li><a href='#'></a></li>
+               </ul>
+            </div><!-- Burger-menu -->
          </div><!-- Nav-burger -->
          <p class='logo'>Dissonance</p>
       </div><!-- Nav-burger-and-logo -->
-         
-         <p class='city city-top'>Ваш город: <span class='city-item'>Санкт-Петербург</span><span class='city-arrow'><img src='img/arrow.png' width='7px' height='5px' alt='arrow'></span></p>
+         <div class='city-container'>
+         <p class='city city-top'>Ваш город: <span class='city-item city-item-max'>Санкт-Петербург</span><span class='city-arrow city-arrow-max'><img src='img/arrow.png' width='7px' height='5px' alt='arrow'></span></p>
+         <div class='city-menu city-menu-max no-active-menu'>
+            <ul>
+               <li><a class='menu-item-1' href='#'>Казань</a></li>
+               <li><a class='menu-item-1' href='#'>Москва</a></li>
+               <li><a class='menu-item-1' href='#'>Екатеринбург</a></li>
+               <li><a class='menu-item-1' href='#'>Уфа</a></li>
+               <li><a class='menu-item-1' href='#'>Санкт-Петербург</a></li>
+            </ul>
+         </div><!-- City-menu -->
+      </div><!-- City-container -->
          <div class='magnifier'>
-         <img src='img/magnifier.png' width='20px' height='20px' alt='magnifier'>
+         <label for='search'><img src='img/magnifier.png' width='20px' height='20px' alt='magnifier'></label>
       </div><!-- Magnifier -->
          </div><!-- Header-item-top -->
+         <div class='search-container no-active-search'>
+            <input type='text' id='search' class='search'>
+            <div class='search-btn-item'>
+            <a class='search-btn' href='#'>Найти</a>
+         </div><!-- Search-btn-item -->
+         </div><!-- Search-container -->
          <div class='header-item-bottom'>
             <div class='city-block'>
-               <p class='city'>Ваш город: <span class='city-item'>Санкт-Петербург</span><span class='city-arrow'><img src='img/arrow.png' width='7px' height='5px' alt='arrow'></span></p>
+               <p class='city'>Ваш город: <span class='city-item city-item-min'>Санкт-Петербург</span><span class='city-arrow city-arrow-min'><img src='img/arrow.png' width='7px' height='5px' alt='arrow'></span></p>
+               <div class='city-menu city-menu-min no-active-menu'>
+                  <ul>
+                     <li><a class='menu-item-2'href='#'>Казань</a></li>
+                     <li><a class='menu-item-2' href='#'>Москва</a></li>
+                     <li><a class='menu-item-2' href='#'>Екатеринбург</a></li>
+                     <li><a class='menu-item-2' href='#'>Уфа</a></li>
+                     <li><a class='menu-item-2' href='#'>Санкт-Петербург</a></li>
+                  </ul>
+               </div><!-- City-menu -->
             </div><!-- City-block -->
          <div class='header-title'>
             <h1>Продажа качественных виниловых пластинок</h1>
@@ -155,5 +188,6 @@
          </div><!-- Footer-columns -->
       </footer>
  <script src='carousel.js'></script>  
+ <script src='menu.js'></script>
 </body>
 </html>

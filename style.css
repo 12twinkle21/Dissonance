@@ -14,8 +14,15 @@ background-color: #FFFAF1;
 .active-cursor{
    cursor: pointer;
 }
+.no-active-menu{
+   display:none;
+}
+.no-active-search{
+visibility: hidden;
+}
 
 /* Header */
+
 header{
    padding-left: 80px;
    display: flex;
@@ -63,11 +70,15 @@ header{
    cursor: pointer;
    height: 30px;
 }
+.magnifier img{
+   cursor: pointer;
+}
 .magnifier:hover{
    transform: translateY(-5px);
    border-bottom: 2px solid #DC143C;
    margin-bottom: -2px;
 }
+
 .header-title{
    max-width: 630px;
 }
@@ -117,10 +128,87 @@ header{
    color: #bcbcbc;
 }
 .city-block{
-   margin-top: -50px;
+   margin-top: -40px;
    margin-bottom: 100px;
    display:none;
+   
+
 }
+.search-container{
+   height: 35px;
+   display: flex;
+   
+}
+.search{
+  background-color: #FFEDBF;
+  border:none;
+  height: 100%;
+  width: 100%;
+}
+
+   
+.search-btn-item{
+   background-color: #FFEDBF;
+   height: 35px;
+   border-left: 2px solid #A0522D;
+   padding: 0 10px;
+   padding-top:3px;
+}
+
+.search-btn-item a{
+   text-decoration: none;
+   font-family: Averta-Cy-Bold;
+   color: #000;
+   font-size: 16px;
+   vertical-align: middle;
+   
+}
+.search-btn-item a:hover{
+   color: #bcbcbc;
+}
+
+/* City-menu */
+
+.city-container{
+   position: relative;
+}
+.city-menu{
+   width: 160px;
+   background-color:#FFEDBF;
+   padding: 10px 15px;
+   position: absolute;
+   top: 55px;
+   left: 83px;
+   
+}
+.city-menu ul{
+   list-style: none;
+   padding: 0;
+}
+.city-menu ul li{
+   border-bottom: 2px solid #A0522D;
+   margin-bottom: 5px;
+   padding-bottom: 5px;
+}
+.city-menu li a{
+text-decoration: none;
+font-family: Averta-Cy-Bold;
+cursor: pointer;
+color: #000;
+font-size: 16px;
+}
+.city-menu li a:hover{
+   color:#bcbcbc;
+}
+.city-block{
+   position:relative;
+}
+.city-menu-min{
+   position: absolute;
+   top:25px;
+   left:82px;
+}
+
 /* Nav-burger */
 
 .nav-burger{
@@ -128,6 +216,7 @@ header{
    padding: 15px 0;
    position:relative;
    cursor: pointer;
+   z-index: 1000;
 }
 .nav-burger-item{
    display:block;
@@ -154,6 +243,26 @@ header{
 }
 .nav-burger-item::before{
    bottom: -6px;
+}
+.nav-burger{
+   position: relative
+}
+.burger-menu{
+   width: 160px;
+   background-color:#FFEDBF;
+   padding: 10px 15px;
+   position: absolute;
+   top: 60px;
+   left: 0;
+}
+.burger-menu ul{
+   list-style: none;
+   padding:0;
+}
+.burger-menu ul li{
+   border-bottom: 2px solid #A0522D;
+   margin-bottom: 5px;
+   padding-bottom: 5px;
 }
 
 /* About-sound */
