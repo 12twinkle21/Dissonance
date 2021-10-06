@@ -49,7 +49,7 @@ arrowRight.addEventListener('click', function (evt) {
    if (count < 2) {
       count++;
    }
-   console.log(count);
+   
 })
 
 function rollCarouselRight1(value) {
