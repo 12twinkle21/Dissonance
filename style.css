@@ -1,0 +1,497 @@
+/* Global */
+
+body{
+margin: 0;
+padding: 0;
+font-family: Averta-Cy;
+background-color: #FFFAF1;
+}
+
+*{
+   box-sizing: border-box;
+}
+
+.active-cursor{
+   cursor: pointer;
+}
+
+/* Header */
+header{
+   padding-left: 80px;
+   display: flex;
+   justify-content: space-between;
+   padding-bottom: 120px;
+}
+.header-item-1{
+   padding-top: 15px;
+   width: 60%;
+   padding-right: 90px;
+}
+.header-item-top{
+   display: flex;
+  justify-content:space-between;
+}
+.logo{
+   font-size: 22px;
+   text-transform: uppercase;
+   font-family: Averta-Cy-Bold;
+   margin-left: 10px;
+}
+.nav-burger-and-logo{
+   display:flex;
+}
+.city{
+   font-size: 16px;
+   margin-top: 25px;
+}
+.city-item{
+   font-family: Averta-Cy-Bold;
+   cursor: pointer;
+}
+.city-item:hover{
+   color: #bcbcbc;
+}
+.city-arrow{
+   margin-left: 10px;
+   cursor: pointer;
+}
+.city-arrow img{
+   vertical-align: middle;
+}
+.magnifier {
+   margin-top: 27px;
+   cursor: pointer;
+   height: 30px;
+}
+.magnifier:hover{
+   transform: translateY(-5px);
+   border-bottom: 2px solid #DC143C;
+   margin-bottom: -2px;
+}
+.header-title{
+   max-width: 630px;
+}
+.header-title h1{
+   font-family: Coworking;
+   font-size: 61px;
+   line-height: 91px;
+   text-transform: uppercase;
+}
+.header-text{
+   max-width: 405px;
+   position: relative
+}
+
+.header-text::after{
+   content: '';
+   position: absolute;
+   width: 178px;
+   height: 184px;
+   background: url(img/catalog.png) no-repeat;
+   right: -280px;
+   top: -80px;
+   cursor: pointer;
+   }
+
+.header-text p{
+   font-size: 16px;
+   line-height: 26px;
+}
+.header-item-2{
+   width: 40%;
+}
+.header-item-2 img{
+   width: 100%;
+   height: 100%;
+}
+.header-catalog{
+   display: none;
+}
+.header-catalog a{
+   color: #A0522D;
+   font-size: 30px;
+   font-family: Averta-Cy-Bold;
+   
+}
+.header-catalog a:hover{
+   color: #bcbcbc;
+}
+.city-block{
+   margin-top: -50px;
+   margin-bottom: 100px;
+   display:none;
+}
+/* Nav-burger */
+
+.nav-burger{
+   width: 20px;
+   padding: 15px 0;
+   position:relative;
+   cursor: pointer;
+}
+.nav-burger-item{
+   display:block;
+   width: 100%;
+   height: 3px;
+   background-color: black;
+   position: absolute;
+   top:0;
+   left:0;
+   right: 0;
+   bottom: 0;
+   margin: auto;
+}
+.nav-burger-item::after,
+.nav-burger-item::before{
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 3px;
+   background-color: black;
+}
+.nav-burger-item::after{
+   top: -6px;
+}
+.nav-burger-item::before{
+   bottom: -6px;
+}
+
+/* About-sound */
+
+.about-sound{
+display:flex;
+padding-bottom: 120px;
+flex-direction: row-reverse;
+}
+.about-sound-item-1{
+   width: 50%;
+}
+.about-sound-item-1 img{
+   width: 100%;
+   height: 100%;
+}
+.about-sound-item-2{
+   width: 50%;
+   padding-right: 100px;
+   padding-left: 60px;
+   padding-top: 20px;
+}
+.about-sound-title{
+   max-width: 475px;
+}
+
+.about-sound-title-text{
+   max-width: 270px;
+}
+
+.about-sound-text-1{
+   max-width: 423px;
+}
+
+.about-sound-text-2{
+   max-width: 450px;
+}
+
+/* About-sound && Assortment */
+
+.about-sound-title h2,
+.assortment-title h2{
+   font-family: Coworking;
+   font-size: 31px;
+   line-height: 46px;
+   text-transform: uppercase;
+}
+.about-sound-title-text h3,
+.assortment-title-text h3{
+   font-family: Averta-Cy-Bold;
+   font-size: 16px;
+   line-height: 26px;
+}
+.about-sound-text-1 p,
+.assortment-text-1 p{
+   font-size: 16px;
+   line-height: 25px;
+}
+.about-sound-text-2 p,
+.assortment-text-2 p{
+   font-size: 16px;
+   line-height: 25px;
+}
+
+/* Assortment */
+
+.assortment{
+   display:flex;
+   padding-bottom: 120px;
+}
+.assortment-item-1{
+   width: 40%;
+   padding-top: 20px;
+   padding-left: 80px;
+   padding-right: 48px;
+}
+.assortment-item-2{
+   width: 60%;
+}
+.assortment-item-2 img{
+   width: 100%;
+   height: 100%;
+}
+.assortment-title{
+   max-width: 302px;
+}
+.assortment-title-text{
+   max-width: 270px;
+}
+.assortment-text-1,
+.assortment-text-2{
+   max-width: 400px;
+}
+
+/* Carousel */
+
+.carousel{
+   padding-top: 50px;
+   padding-bottom: 120px;
+   overflow: hidden;
+}
+.carousel-top{
+   padding: 0 80px;
+   display: flex;
+   justify-content: space-between;
+}
+.carousel-title{
+   margin-top: -30px;
+}
+.carousel-title h2{
+   font-family: Coworking;
+   font-size: 31px;
+   text-transform: uppercase;
+}
+.carousel-arrow-right{
+   margin-left: 20px;
+   
+}
+.carousel-bottom{
+   padding-left: 80px;
+   margin-top: 50px;
+}
+.carousel-line{
+   display:flex;
+   transition: all ease 1s;
+   padding-bottom: 100px;
+}
+.carousel-item-img{
+   min-width: 40%;
+   margin-right: 80px;
+}
+.carousel-img{
+   width: 100%;
+   height: auto;
+}
+.carousel-item-img:last-child{
+   margin-right: 0;
+  
+}
+.carousel-item-img:nth-child(2n){
+   transform: translateY(80px);
+}
+
+/* Footer */
+
+footer{
+   padding: 90px 80px;
+   background-color: #FFEDBF;
+   
+}
+
+footer ul{
+   list-style: none;
+   padding: 0;
+}
+footer a{
+   text-decoration: none;
+}
+footer h3{
+   font-family: Averta-Cy-Bold;
+   font-size: 16px;
+   text-transform: uppercase;
+}
+footer p,
+footer a{
+   color: #000;
+   font-size: 16px;
+   line-height: 30px;
+}
+.footer-columns{
+   display:flex;
+   justify-content: space-between;
+}
+.footer-time{
+   margin-top: 0;
+}
+footer a:hover{
+color: #bcbcbc;
+}
+
+/* Media */
+
+@media(max-width: 1250px){
+   .header-title h1{
+      font-size: 40px;
+      line-height: 60px;
+   }
+   .header-text::after{
+      top: 50px;
+      right: -150px;
+   }
+}
+
+@media(max-width: 1050px){
+   header{
+      padding-left: 0;
+   }
+   .header-item-1,
+   .assortment-item-1,
+   .carousel-bottom{
+      padding-left: 30px;
+   }
+   .about-sound-item-2{
+      padding-right: 30px;
+   }
+   .carousel-top{
+      padding: 0 30px;
+   }
+   footer{
+      padding: 90px 30px;
+   }
+}
+@media(max-width: 1023px){
+header,
+.about-sound,
+.assortment{
+   display: block;
+   
+}
+.header-item-1,
+.header-item-2,
+.about-sound-item-1,
+.about-sound-item-2,
+.assortment-item-1,
+.assortment-item-2{
+   width: 100%;
+}
+.header-item-bottom{
+   margin-top: 50px;
+}
+
+.header-item-1{
+   padding-right: 30px;
+   padding-bottom: 80px;
+}
+.header-catalog{
+   display: block;
+   text-align: center;
+}
+.header-text::after{
+display: none;
+}
+.header-title,
+.about-sound-title,
+.assortment-title{
+margin: 0 auto;
+text-align: center;
+}
+.header-text,
+.about-sound-text-1,
+.about-sound-text-2,
+.about-sound-title-text,
+.assortment-title-text,
+.assortment-text-1,
+.assortment-text-2{
+   margin: 0 auto;
+   text-align: center;
+   }
+   .about-sound-item-2{
+      padding-bottom: 80px;
+      padding-left: 30px;
+   }
+  .assortment-item-1{
+     padding-right: 30px;
+     padding-bottom: 80px;
+  }
+  .assortment-item-2{
+   padding-right: 0;
+  }
+  .footer-columns{
+     display: block;
+  }
+}
+
+@media(max-width: 650px){
+   .carousel-top{
+      display: block;
+   }
+   .carousel-title{
+      text-align: center;
+   }
+   .carousel-arrows{
+      text-align: center;
+   }
+}
+
+@media(max-width: 550px){
+   .header-title,
+   .header-text,
+   .about-sound-title,
+   .about-sound-title-text,
+   .about-sound-text-1,
+   .about-sound-text-2,
+   .assortment-title,
+   .assortment-title-text,
+   .assortment-text-1,
+   .assortment-text-2{
+      max-width:none;
+   }
+   .header-title h1{
+      font-size: 25px;
+      line-height: 40px;
+   }
+   .about-sound-title h2,
+   .assortment-title h2{
+      font-size: 20px;
+      line-height: 30px;
+   }
+   .city-top{
+      display: none;
+   }
+   .city-block{
+      display: block;
+   }
+   .carousel-bottom{
+      padding-left: 15px;
+   }
+}
+
+/* Fonts */
+
+@font-face {
+   font-family: Coworking;
+   src: url(fonts/Coworking.ttf) format('truetype');
+   font-style:normal;
+   font-weight: 400;
+}
+
+@font-face {
+   font-family: Averta-Cy;
+   src: url(fonts/AvertaCyrillicRegular.otf) format('truetype');
+   font-style:normal;
+   font-weight: 400;
+}
+
+@font-face {
+   font-family: Averta-Cy-Bold;
+   src: url(fonts/AvertaCyrillicBold.otf) format('truetype');
+   font-style:normal;
+   font-weight: 700;
+}
