@@ -79,15 +79,25 @@ for (let i = 0; i < cityMaxMenuBtns.length; i++){
 
 let navBurger = document.querySelector('.nav-burger');
 let burgerMenu = document.querySelector('.burger-menu');
+let body = document.querySelector('body')
 
-navBurger.addEventListener('click', function () {
-   
+navBurger.addEventListener('click', function (evt) {
+   evt.stopPropagation();
    if (burgerMenu.classList.contains('no-active-menu')) {
-      burgerMenu.classList.remove('no-active-menu')
-   } else {
-      burgerMenu.classList.add('no-active-menu');
+      burgerMenu.classList.add('active-menu');
+      burgerMenu.classList.remove('no-active-menu'); 
    }
+   else {
+      burgerMenu.classList.add('no-active-menu');
+      burgerMenu.classList.remove('active-menu');
+   }
+})
 
+body.addEventListener('click', function () {
+   if (burgerMenu.classList.contains('active-menu')) {
+      burgerMenu.classList.remove('active-menu');
+      burgerMenu.classList.add('no-active-menu')
+   }
 })
 
 //Search
@@ -96,18 +106,24 @@ let searchBtn = document.querySelector('.magnifier');
 let searchMenu = document.querySelector('.search-container');
 let searchMenuBtn = document.querySelector('.search-btn-item')
 searchBtn.addEventListener('click', function (evt) {
-
+   evt.stopPropagation();
    evt.preventDefault();
    if (searchMenu.classList.contains('no-active-search')) {
-      searchMenu.classList.remove('no-active-search')
-   } else {
-      searchMenu.classList.add('no-active-search');
+      searchMenu.classList.add('active-search');
+      searchMenu.classList.remove('no-active-search'); 
    }
-
+   else {
+      searchMenu.classList.add('no-active-search');
+      searchMenu.classList.remove('active-search');
+   }
 })
 
+
 searchMenuBtn.addEventListener('click', function (evt) {
-   evt.preventDefault()
-   searchMenu.classList.add('no-active-search');
+   evt.stopPropagation();
+   if (searchMenu.classList.contains('active-search')) {
+      searchMenu.classList.remove('active-search');
+      searchMenu.classList.add('no-active-search');
+   }
 })
 

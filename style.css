@@ -14,8 +14,18 @@ background-color: #FFFAF1;
 .active-cursor{
    cursor: pointer;
 }
+.active-menu{
+   display:block;
+   animation-duration: 0.5s;
+   animation-name: menu-slide;
+}
 .no-active-menu{
    display:none;
+}
+.active-search{
+   visibility: visible;
+   animation-duration: 0.5s;
+   animation-name: search-slide;
 }
 .no-active-search{
 visibility: hidden;
@@ -92,18 +102,22 @@ header{
    max-width: 405px;
    position: relative
 }
-
-.header-text::after{
-   content: '';
+.header-text-btn{
    position: absolute;
    width: 178px;
    height: 184px;
-   background: url(img/catalog.png) no-repeat;
    right: -280px;
    top: -80px;
    cursor: pointer;
-   }
-
+}
+.header-text-btn img{
+   width: 100%;
+   height: 100%;
+}
+.header-text-btn:hover{
+   width: 188px;
+   height: 194px;
+}
 .header-text p{
    font-size: 16px;
    line-height: 26px;
@@ -253,7 +267,6 @@ font-size: 16px;
    padding: 10px 15px;
    position: absolute;
    top: 60px;
-   left: 0;
 }
 .burger-menu ul{
    list-style: none;
@@ -264,7 +277,16 @@ font-size: 16px;
    margin-bottom: 5px;
    padding-bottom: 5px;
 }
-
+.burger-menu ul li a{
+   text-decoration: none;
+   font-family: Averta-Cy-Bold;
+   cursor: pointer;
+   color: #000;
+   font-size: 16px;
+}
+.burger-menu ul li a:hover{
+   color: #bcbcbc;
+}
 /* About-sound */
 
 .about-sound{
@@ -450,7 +472,7 @@ color: #bcbcbc;
       font-size: 40px;
       line-height: 60px;
    }
-   .header-text::after{
+   .header-text-btn{
       top: 50px;
       right: -150px;
    }
@@ -502,7 +524,7 @@ header,
    display: block;
    text-align: center;
 }
-.header-text::after{
+.header-text-btn{
 display: none;
 }
 .header-title,
@@ -604,3 +626,25 @@ text-align: center;
    font-style:normal;
    font-weight: 700;
 }
+
+/* Animation */
+
+@keyframes menu-slide {
+   from {
+    left: -100px;
+   }
+ 
+   to {
+     left: 0;
+   }
+ }
+
+ @keyframes search-slide {
+   from {
+    transform: translateY(-35px);
+   }
+ 
+   to {
+      transform: translateY(0);
+   }
+ }
