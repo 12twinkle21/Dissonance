@@ -2,12 +2,12 @@
 
 let cityMaxBtn = document.querySelector('.city-item-max');
 let cityMaxMenu = document.querySelector('.city-menu-max');
-let cityMaxArrow = document.querySelector('.city-arrow-max')
+let cityMaxArrow = document.querySelector('.city-arrow-max');
 
 cityMaxBtn.addEventListener('click', function (evt) {
    evt.preventDefault();
    if (cityMaxMenu.classList.contains('no-active-menu')) {
-      cityMaxMenu.classList.remove('no-active-menu')
+      cityMaxMenu.classList.remove('no-active-menu');
    } else {
       cityMaxMenu.classList.add('no-active-menu');
    }
@@ -17,7 +17,7 @@ cityMaxBtn.addEventListener('click', function (evt) {
 cityMaxArrow.addEventListener('click', function (evt) {
    evt.preventDefault();
    if (cityMaxMenu.classList.contains('no-active-menu')) {
-      cityMaxMenu.classList.remove('no-active-menu')
+      cityMaxMenu.classList.remove('no-active-menu');
    } else {
       cityMaxMenu.classList.add('no-active-menu');
    }
@@ -28,12 +28,12 @@ cityMaxArrow.addEventListener('click', function (evt) {
 
 let cityMinBtn = document.querySelector('.city-item-min');
 let cityMinMenu = document.querySelector('.city-menu-min');
-let cityMinArrow = document.querySelector('.city-arrow-min')
+let cityMinArrow = document.querySelector('.city-arrow-min');
 
 cityMinBtn.addEventListener('click', function (evt) {
    evt.preventDefault();
    if (cityMinMenu.classList.contains('no-active-menu')) {
-      cityMinMenu.classList.remove('no-active-menu')
+      cityMinMenu.classList.remove('no-active-menu');
    } else {
       cityMinMenu.classList.add('no-active-menu');
    }
@@ -43,7 +43,7 @@ cityMinBtn.addEventListener('click', function (evt) {
 cityMinArrow.addEventListener('click', function (evt) {
   evt.preventDefault();
    if (cityMinMenu.classList.contains('no-active-menu')) {
-      cityMinMenu.classList.remove('no-active-menu')
+      cityMinMenu.classList.remove('no-active-menu');
    } else {
       cityMinMenu.classList.add('no-active-menu');
    }
@@ -79,7 +79,7 @@ for (let i = 0; i < cityMaxMenuBtns.length; i++){
 
 let navBurger = document.querySelector('.nav-burger');
 let burgerMenu = document.querySelector('.burger-menu');
-let body = document.querySelector('body')
+let body = document.querySelector('body');
 
 navBurger.addEventListener('click', function (evt) {
    evt.stopPropagation();
@@ -96,7 +96,7 @@ navBurger.addEventListener('click', function (evt) {
 body.addEventListener('click', function () {
    if (burgerMenu.classList.contains('active-menu')) {
       burgerMenu.classList.remove('active-menu');
-      burgerMenu.classList.add('no-active-menu')
+      burgerMenu.classList.add('no-active-menu');
    }
 })
 
@@ -104,7 +104,7 @@ body.addEventListener('click', function () {
 
 let searchBtn = document.querySelector('.magnifier');
 let searchMenu = document.querySelector('.search-container');
-let searchMenuBtn = document.querySelector('.search-btn-item')
+let searchMenuBtn = document.querySelector('.search-btn-item');
 searchBtn.addEventListener('click', function (evt) {
    evt.stopPropagation();
    evt.preventDefault();

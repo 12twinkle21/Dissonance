@@ -22,12 +22,12 @@ arrowLeft.addEventListener('click', function (evt) {
    if (count == 2) {
       rollCarouselLeft2(widthOfImage);
       arrowRight.src = 'img/arrow-right-active.png';
-      arrowRight.classList.add('active-cursor')
+      arrowRight.classList.add('active-cursor');
    }
    if (count == 1) {
       rollCarouselLeft1(widthOfImage);
       arrowLeft.src = 'img/arrow-left-no-active.png';
-      arrowLeft.classList.remove('active-cursor')
+      arrowLeft.classList.remove('active-cursor');
    }
    if (count > 0) {
       count--;
